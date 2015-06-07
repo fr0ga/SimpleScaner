@@ -5,6 +5,8 @@ import java.util.Scanner;
  */
 public class SimpleScaner {
 
+    static String input = "";
+
     public static String getString() {
         Scanner input = new Scanner(System.in);
         String inputString = input.next();
@@ -13,14 +15,11 @@ public class SimpleScaner {
 
 
     public static void main(String[] args) {
-        System.out.println("Test");
-        String str = "";
-        str = getString();
-        System.out.println(str);
 
-        while (!str.equals("quit")) {
-            str = getString();
-            System.out.println(str);
+
+        while (!input.equals("quit")) {
+            input = getString();
+            System.out.println(input);
         }
 
     }
